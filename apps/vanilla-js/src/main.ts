@@ -1,18 +1,7 @@
 import './index.css';
 
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
-import { getByJsId } from './utils';
+import { getByJsId, getRandomInclusiveBetween1and100 } from 'utils';
 
-function getRandomIntInclusive(min: number, max: number) {
-  // Ensure min and max are integers
-  min = Math.ceil(min);
-  max = Math.floor(max);
-
-  // Generate and return random integer between min and max, inclusive
-  return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-const getRandomInclusiveBetween1and100 = () => getRandomIntInclusive(1, 100);
 
 let numberToGuess: number = getRandomInclusiveBetween1and100();
 let attempts = 0;

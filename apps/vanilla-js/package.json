@@ -13,7 +13,9 @@
     "test:ci": "vitest run --reporter=verbose",
     "test:coverage": "vitest --watch=false --silent --coverage --reporter=verbose"
   },
-  "dependencies": {},
+  "dependencies": {
+    "utils": "workspace:*"
+  },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
